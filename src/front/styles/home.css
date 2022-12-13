@@ -1,7 +1,94 @@
-/*
-    home.css: This website contains selectors only used in home.css
+.footer {
+  text-decoration: linen;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
 
-    All pages share the styles on index.css but you should create 
-    one more css for each page that will contain the selected used 
-    on that page only (the ones not reused in other pages).
-*/
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border-left-color: #09f;
+
+  animation: spin 1s ease infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.userphoto {
+  object-fit: cover;
+  height: 21.875rem;
+  width: 19.9rem;
+}
+
+body {
+  background: #deefdf;
+}
+
+/* Sessions styling */
+
+.schedulebutton {
+  background: #ff9c5a;
+  border: none;
+  color: black;
+}
+
+.schedulebutton:hover {
+  background: #ff812d;
+  border: none;
+  color: white;
+}
+
+.schedulebutton:active {
+  background: #fd6c0b !important ;
+  border: none;
+}
+
+.outButton {
+  color: black;
+  border: none;
+  -webkit-box-shadow: inset 0px 0px 0px 2px #fd6c0b;
+  -moz-box-shadow: inset 0px 0px 0px 2px #fd6c0b;
+  box-shadow: inset 0px 0px 0px 2px #fd6c0b;
+}
+
+.outButton:hover {
+  background: #fd6c0b;
+  border: none;
+}
+
+.outButton:active {
+  background: #fd6c0b !important ;
+  border: none;
+}
+
+.navLink {
+  text-decoration: none;
+  color: black;
+}
+
+#sessionLink:hover {
+  color: white;
+}
+
+.tableheader {
+  background: #6fc675 !important ;
+}
+
+.nav-link {
+  color: rgb(0, 0, 0);
+}
+
+.nav-link.active {
+  background: #ff812d !important;
+}
